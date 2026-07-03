@@ -1,37 +1,121 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>APEC Student Login</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>APEC Student Login Portal</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:linear-gradient(135deg,#003366,#0059b3);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+}
+
+.login-box{
+    background:#fff;
+    width:380px;
+    padding:35px;
+    border-radius:15px;
+    text-align:center;
+    box-shadow:0 10px 30px rgba(0,0,0,0.3);
+}
+
+.logo{
+    width:110px;
+    margin-bottom:15px;
+}
+
+h2{
+    color:#003366;
+    margin-bottom:5px;
+}
+
+p{
+    color:gray;
+    margin-bottom:25px;
+}
+
+input{
+    width:100%;
+    padding:12px;
+    margin:10px 0;
+    border:1px solid #ccc;
+    border-radius:6px;
+    font-size:15px;
+}
+
+button{
+    width:100%;
+    padding:12px;
+    background:#003366;
+    color:white;
+    border:none;
+    border-radius:6px;
+    font-size:16px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#0059b3;
+}
+
+.footer{
+    margin-top:20px;
+    font-size:13px;
+    color:#666;
+}
+
+a{
+    color:#003366;
+    text-decoration:none;
+}
+
+a:hover{
+    text-decoration:underline;
+}
+</style>
+
 </head>
 
 <body>
 
-<div class="container">
+<div class="login-box">
 
-    <div class="login-card">
+    <!-- College Logo -->
+    <img src="logo.png" alt="College Logo" class="logo">
 
-        <img src="logo.png" class="logo">
+    <h2>Adhiparasakthi Engineering College</h2>
 
-        <h2>Adhiparasakthi Engineering College</h2>
+    <p>Student Login Portal</p>
 
-        <input type="text" placeholder="Enter Register Number">
+    <form>
 
-        <input type="password" placeholder="Enter Password">
+        <input type="text" placeholder="Register Number" required>
 
-        <button>Login</button>
+        <input type="password" placeholder="Password" required>
 
+        <button type="submit">Login</button>
+
+    </form>
+
+    <div class="footer">
+        <br>
         <a href="#">Forgot Password?</a>
-
-        <p>© 2026 Adhiparasakthi Engineering College</p>
-
+        <br><br>
+        © 2026 APEC Student Portal
     </div>
 
 </div>
-
-<script src="script.js"></script>
 
 </body>
 </html>
